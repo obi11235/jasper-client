@@ -10,6 +10,8 @@ sudo pip install --upgrade setuptools
 sudo pip install -r client/requirements.txt
 
 chmod +x jasper.py
+exit
+
 
 sudo apt-get install fakeroot debhelper automake autoconf libtool help2man libpopt-dev hardening-wrapper
 
@@ -29,8 +31,6 @@ sudo dpkg -i libttspico-data_1.0+git20110131-2_all.deb
 sudo dpkg -i libttspico0_1.0+git20110131-2_armhf.deb
 sudo dpkg -i libttspico-utils_1.0+git20110131-2_armhf.deb
 
-cd svox-1.0+git20110131
-dpkg-buildpackage -rfakeroot -us -uc
 
 cd ..
 echo 'Installing pocketsphinx'
